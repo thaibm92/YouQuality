@@ -5,13 +5,13 @@
 #define TweakKey @"YouQuality"
 
 @interface YTMainAppControlsOverlayView (YouQuality)
-@property (retain, nonatomic) YTQTMButton *overlayButtons;
+@property (retain, nonatomic) NSDictionary<NSString *, YTQTMButton *> *overlayButtons;
 - (void)didPressYouQuality:(id)arg;
 - (void)updateYouQualityButton:(id)arg;
 @end
 
 @interface YTInlinePlayerBarContainerView (YouQuality)
-@property (retain, nonatomic) YTQTMButton *overlayButtons;
+@property (retain, nonatomic) NSDictionary<NSString *, YTQTMButton *> *overlayButtons;
 - (void)didPressYouQuality:(id)arg;
 - (void)updateYouQualityButton:(id)arg;
 @end
