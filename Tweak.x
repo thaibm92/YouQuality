@@ -5,6 +5,7 @@
 #define TweakKey @"YouQuality"
 
 @interface YTMainAppControlsOverlayView (YouQuality)
+@property (retain, nonatomic) YTQTMButton *overlayButtons;
 - (void)didPressYouQuality:(id)arg;
 - (void)updateYouQualityButton:(id)arg;
 @end
