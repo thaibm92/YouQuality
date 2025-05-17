@@ -21,7 +21,7 @@ NSString *currentQualityLabel = @"N/A";
 
 static void setButtonStyle(YTQTMButton *button) {
     button.titleLabel.numberOfLines = 3;
-    [button setTitle:@"Auto" forState:0];
+    [button setTitle:@"Auto" forState:UIControlStateNormal];
 }
 
 %group Video
@@ -91,7 +91,7 @@ NSString *getCompactQualityLabel(MLFormat *format) {
 
 %new(v@:@)
 - (void)updateYouQualityButton:(id)arg {
-    [self.overlayButtons[TweakKey] setTitle:currentQualityLabel forState:0];
+    [self.overlayButtons[TweakKey] setTitle:currentQualityLabel forState:UIControlStateNormal];
 }
 
 %new(v@:@)
@@ -124,7 +124,7 @@ NSString *getCompactQualityLabel(MLFormat *format) {
 
 %new(v@:@)
 - (void)updateYouQualityButton:(id)arg {
-    [self.overlayButtons[TweakKey] setTitle:currentQualityLabel forState:0];
+    [self.overlayButtons[TweakKey] setTitle:currentQualityLabel forState:UIControlStateNormal];
 }
 
 %new(v@:@)
